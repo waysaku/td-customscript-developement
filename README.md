@@ -7,7 +7,7 @@ build docker image
 `docker build -t waysaku/digdag-python-dev --no-cache=true /dockerfile/`
 
 start container from image  
-`docker run -it [ImageId] /bin/bash`
+`docker run -it -p 8000:8000 -v ~/Download:/mnt [ImageId] /bin/bash`
 
 login current container  
 `docker exec -it [Container Id] /bin/bash`
